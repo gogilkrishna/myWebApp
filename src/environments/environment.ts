@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API:'https://api.twitter.com/',
+  token:'AAAAAAAAAAAAAAAAAAAAAIevewEAAAAAhyfYA5SHsjRONzzlV%2FHnWl1hS6I%3DSo6dOz5a03RWsaHlV48LYtGjlYLhvbuAOAqnqS1jTnYbKexPqU',
+  APIkey:'2w4Zgw9jtSF700dY4gI9FsUoe',
+  APIkeySecret:'Vtok4kQt4gvuUM46TU37vYTi8oKLqxee3mmmg87NqEGpEprm3k',
+  AccessToken:'972509147932459009-sJjwVR5aErBA3FQF60REbuPZxyucukn',
+  AccessTokenSecret:'nxRAKi3QvtnzWacVmULG50TUV7FHDrWnNXZ7J5JkJ6lSH',
+
+
 };
 
 /*
