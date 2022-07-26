@@ -17,12 +17,8 @@ export class FeedListingComponent implements OnInit {
   feedListing(){
     this.feedSer.getAllFeeds()
       .subscribe((res:any) => {
-        console.log(res)
+        console.log('feeds',res.value)
       })
-
-
-
-
   }
 
   ngOnInit(): void {

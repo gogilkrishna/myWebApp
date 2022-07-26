@@ -1,0 +1,16 @@
+<mat-drawer-container class="home-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="over">
+    <li routerLink="feeds" >Feeds</li>
+  </mat-drawer>
+
+  <mat-toolbar-row>
+  <div class="example-sidenav">
+    <button type="button" mat-raised-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+    <button mat-raised-button>Login</button>
+    <router-outlet></router-outlet>
+  </div>
+  </mat-toolbar-row>
+
+</mat-drawer-container>
