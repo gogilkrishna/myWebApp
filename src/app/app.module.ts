@@ -1,3 +1,4 @@
+import { HomeService } from './../core/service/home/home.service';
 import { TokenInterceptorService } from './../core/interceptor/token-interceptor.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,7 +13,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 
-
 @NgModule({
   declarations: [
     AppComponent
@@ -24,11 +24,12 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     BrowserAnimationsModule,
     MatAutocompleteModule,
     MatDatepickerModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
 
 
   ],
   providers: [
+    HomeService,
     {
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptorService,

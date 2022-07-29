@@ -1,3 +1,4 @@
+import { HomeService } from 'src/core/service/home/home.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
@@ -9,13 +10,9 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
 
+  constructor()
+  {}
 
-  showFiller = false;
-
-  constructor() { }
-
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

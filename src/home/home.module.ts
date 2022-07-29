@@ -6,6 +6,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { RouterModule, Routes } from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -22,7 +24,9 @@ const routes: Routes = [
 ]
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    NavigationBarComponent,
+    HeaderComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,11 @@
+.sidenav {
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  background: lightblue;
+  transition: all .5s;
+  &.close {
+    left: 0px;
+  }
+}
